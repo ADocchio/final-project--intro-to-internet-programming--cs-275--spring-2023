@@ -23,7 +23,7 @@ let lintJS = () => {
 };
 
 let lintCSS = () => {
-    return src(`dev/css/main.css`)
+    return src(`dev/css/style.css`)
         .pipe(CSSLinter({
             failAfterError: false,
             reporters: [
@@ -76,13 +76,13 @@ let serve = () => {
         }
     });
 
-    watch(`dev/js/main.js`, series(lintJS , transpileJSForDev))
+    watch(`dev/js/app.js`, series(lintJS , transpileJSForDev))
         .on(`change`, reload);
 
-    watch(`dev/css/main.css`, series(lintCSS, compileCSSForDev))
+    watch(`dev/css/style.css`, series(lintCSS, compileCSSForDev))
         .on(`change`, reload);
 
-    watch(`dev/html/index.html`)
+    watch(`dev/html/*.html`, copyUnprocessedAssetsForDev)
         .on(`change`, reload);
 };
 
