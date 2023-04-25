@@ -65,7 +65,9 @@ window.onload = () => {
 
     while(!validInput){
         let input = window.prompt(`Input your matrix size`);
-        if(!isNaN(parseInt(input))){ //make sure input is valid
+
+        //make sure input is valid
+        if(!isNaN(parseInt(input)) && parseInt(input) > 1){
             validInput = true;
             let matrix = makeMatrix(input);
 
