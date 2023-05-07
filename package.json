@@ -1,0 +1,23 @@
+{
+    "name": "final-project--intro-to-internet-programming--cs-275--spring-2023",
+    "version": "1.0.0",
+    "description": "CS275 Final Assignment",
+     "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Kameron Crichlow",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/preset-env": "^7.21.4",
+      "gulp-stylelint": "^13.0.0",
+      "gulp-babel": "^8.0.0",
+      "gulp-htmlmin": "^5.0.1",
+      "gulp-eslint": "^6.0.0",
+      "browser-sync": "^2.29.1",
+      "gulp": "^4.0.2",
+      "gulp-uglify": "^3.0.2",
+      "gulp-uglifycss": "^1.1.0",
+      "stylelint": "^15.4.0"
+    }
+  }
