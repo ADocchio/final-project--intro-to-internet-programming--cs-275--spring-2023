@@ -12,12 +12,14 @@
       "@babel/preset-env": "^7.21.4",
       "gulp-stylelint": "^13.0.0",
       "gulp-babel": "^8.0.0",
+      "gulp-html": "^6.0.0",
       "gulp-htmlmin": "^5.0.1",
       "gulp-eslint": "^6.0.0",
       "browser-sync": "^2.29.1",
       "gulp": "^4.0.2",
       "gulp-uglify": "^3.0.2",
       "gulp-uglifycss": "^1.1.0",
+      "gulp-clean-css": "^4.3.0",
       "stylelint": "^15.4.0"
     }
   }
