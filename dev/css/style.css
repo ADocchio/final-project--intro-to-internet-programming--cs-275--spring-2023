@@ -1,0 +1,31 @@
+html {
+  text-align: center;
+}
+
+h1 {
+  font-size: 120%;
+  margin-top: 15px;
+  font-family: Lobster, cursive;
+}
+
+h2 {
+  font-size: 120%;
+  margin-top: 15px;
+  font-family: Lobster, cursive;
+}
+
+table {
+  border: solid;
+  margin: auto;
+}
+
+td {
+  padding: 15px;
+  border: solid;
+  border-color: black;
+}
+
+.diagonal {
+  background-color: yellow;
+  color: red;
+}
