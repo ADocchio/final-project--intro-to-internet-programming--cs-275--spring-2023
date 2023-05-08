@@ -52,7 +52,7 @@ const validateInput = (input) => {
     return !isNaN(n) && n >= 2;
 };
 
-const inputHandler = () => {
+window.onload = () => {
     let validInput = false;
     let input;
     // Tells the user to keep putting in a value until a correct one is given
@@ -77,15 +77,13 @@ const inputHandler = () => {
 
     //Title and Display of OG
     const originalMatrixTitle = document.createElement(`h2`);
-    originalMatrixTitle.innerText = `Original Matrix`;
+    originalMatrixTitle.innerText = `OG Matrix`;
     canvas.appendChild(originalMatrixTitle);
     displayMatrix(matrix, canvas);
 
     //Title and Display of Flipped
     const flippedMatrixTitle = document.createElement(`h2`);
-    flippedMatrixTitle.innerText = `Flipped Matrix`;
+    flippedMatrixTitle.innerText = `Fliped Matrix`;
     canvas.appendChild(flippedMatrixTitle);
     displayMatrix(FlippedMatrix, canvas);
 };
-
-window.onload = inputHandler;
